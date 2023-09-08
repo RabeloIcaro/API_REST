@@ -1,7 +1,11 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _sequelize = require('sequelize'); var _sequelize2 = _interopRequireDefault(_sequelize);
-var _bcryptjs = require('bcryptjs'); var _bcryptjs2 = _interopRequireDefault(_bcryptjs);
+Object.defineProperty(exports, '__esModule', { value: true }); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; } const _sequelize = require('sequelize');
 
- class User extends _sequelize.Model {
+const _sequelize2 = _interopRequireDefault(_sequelize);
+const _bcryptjs = require('bcryptjs');
+
+const _bcryptjs2 = _interopRequireDefault(_bcryptjs);
+
+class User extends _sequelize.Model {
   static init(sequelize) {
     super.init({
       nome: {

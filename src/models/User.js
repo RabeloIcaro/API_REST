@@ -47,6 +47,11 @@ export default class User extends Model {
           },
         },
       },
+      validation_code: {
+        type: Sequelize.STRING,
+        defaultValue: '',
+
+      },
     }, {
       sequelize,
       timestamps: true,

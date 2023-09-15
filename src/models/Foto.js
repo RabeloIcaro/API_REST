@@ -9,7 +9,7 @@ export default class Foto extends Model {
         defaultValue: '',
         validate: {
           notEmpty: {
-            msg: 'Campo não pode ficar vazio',
+            msg: 'Cannot be empty',
           },
         },
       },
@@ -18,7 +18,7 @@ export default class Foto extends Model {
         defaultValue: '',
         validate: {
           notEmpty: {
-            msg: 'Campo não pode ficar vazio',
+            msg: 'Cannot be empty',
           },
         },
       },

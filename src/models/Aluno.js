@@ -9,7 +9,7 @@ export default class Aluno extends Model {
         validate: {
           len: {
             args: [3, 255],
-            msg: 'Nome precisa ter entre 3 e 255 caracteres',
+            msg: 'Name needs to be between 3 and 255 characters',
           },
         },
       },
@@ -19,7 +19,7 @@ export default class Aluno extends Model {
         validate: {
           len: {
             args: [3, 255],
-            msg: 'Sobrenome precisa ter entre 3 e 255 caracteres',
+            msg: 'Lastname needs to be between 3 and 255 characters',
           },
         },
       },
@@ -27,11 +27,11 @@ export default class Aluno extends Model {
         type: Sequelize.STRING,
         defaultValue: '',
         unique: {
-          msg: 'E-mail já existe',
+          msg: 'E-mail already exists',
         },
         validate: {
           isEmail: {
-            msg: 'Email inválido',
+            msg: 'Invalid e-mail',
           },
         },
       },
@@ -40,7 +40,7 @@ export default class Aluno extends Model {
         defaultValue: '',
         validate: {
           isInt: {
-            msg: 'Idade precisa ser um número inteiro',
+            msg: 'Age needs to be integer',
           },
         },
       },
@@ -49,7 +49,7 @@ export default class Aluno extends Model {
         defaultValue: '',
         validate: {
           isFloat: {
-            msg: 'Peso precisa ser um número inteiro ou d eponto flutuante',
+            msg: 'weight has to be a float number',
           },
         },
       },
@@ -58,7 +58,7 @@ export default class Aluno extends Model {
         defaultValue: '',
         validate: {
           isFloat: {
-            msg: 'Altura precisa ser um número inteiro ou d eponto flutuante',
+            msg: 'height has to be a float number',
           },
         },
       },

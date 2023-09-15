@@ -34,7 +34,7 @@ class AlunoController {
       const { id } = req.params;
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
       const aluno = await Aluno.findByPk(id, {
@@ -47,7 +47,7 @@ class AlunoController {
       });
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Aluno não existe'],
+          errors: ['Student does not exist'],
         });
       }
       return res.json(aluno);
@@ -63,13 +63,13 @@ class AlunoController {
       const { id } = req.params;
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
       const aluno = await Aluno.findByPk(id);
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Aluno não existe'],
+          errors: ['Student does not exist'],
         });
       }
       await aluno.destroy();
@@ -88,13 +88,13 @@ class AlunoController {
       const { id } = req.params;
       if (!id) {
         return res.status(400).json({
-          errors: ['Faltando ID'],
+          errors: ['Missing ID'],
         });
       }
       const aluno = await Aluno.findByPk(id);
       if (!aluno) {
         return res.status(400).json({
-          errors: ['Aluno não existe'],
+          errors: ['Student does not exist'],
         });
       }
 

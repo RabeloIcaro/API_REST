@@ -21,7 +21,7 @@ class FotoController {
           return res.json(foto);
         } catch (e) {
           return res.status(400).json({
-            errors: ['Aluno não existe'],
+            errors: ['Student does not exist'],
           });
         }
       });

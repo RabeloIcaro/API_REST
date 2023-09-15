@@ -29,7 +29,7 @@ class User extends _sequelize.Model {
             User.findOne({ where: { email: value } })
               .then((user) => {
                 if (user) {
-                  return next('E-mail já existe, tente outro!');
+                  return next('E-mail already exists, tente outro!');
                 }
                 return next();
               })

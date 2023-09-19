@@ -1,0 +1,9 @@
+# versão do compose
+version: '3.3'
+# seviços
+services:
+    school-api:
+        image: 'node-api:0.0.1'
+        container_name: 'school-api'
+        ports:
+            - 3001:3001
